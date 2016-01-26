@@ -1,0 +1,109 @@
+.no-support-message { display:none; }
+.impress-not-supported .no-support-message { display:block; }
+#impress {
+  .slide {
+    display: block;
+    width: 1000px;
+    height: 600px;
+    padding: 40px 60px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+
+    color: rgb(102, 102, 102);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+    transition: 1s linear;
+
+    .cover {
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      height: 100px;
+      margin: auto;
+    }
+    .catalog {
+      text-align: left;
+      li {
+        line-height: 50px;
+      }
+      img {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        width: 500px;
+        height: 500px;
+        transform: rotate3d(1, 1, 0, 25deg);
+      }
+    }
+    .task {
+      .grunt {
+        width: 211px;
+        height: 249px;
+        transform: rotate(-12deg);
+      }
+      .gulp {
+        width: 200px;
+        height: 200px;
+        transform: rotate(12deg);
+      }
+    }
+    .task-compare {
+      border: 1px solid #0b97c4;
+      margin: 0 auto;
+      font-size: 24px;
+      td,th {
+        padding: 10px;
+      }
+    }
+    .builders {
+      .brunch {
+        white-space: nowrap;
+      }
+      span{
+        height: 129px;
+        vertical-align: middle;
+        display: inline-block;
+      }
+    }
+    .standard {
+      text-align: left;
+    }
+    .webpack {
+      ul {
+        text-align: left;
+      }
+      img {
+        position: absolute;
+        width: 320px;
+        height: 213px;
+        top: 20px;
+        right: 20px;
+        transform: rotate(15deg);
+        border-radius: 50%;
+      }
+    }
+    .config {
+      text-align: left;
+    }
+    .fat-cat {
+      border-radius: 50%;
+      width: 58%;
+      transform: rotate(12deg);
+    }
+    .isomorphic {
+      text-align: left;
+      img {
+        width: 400px;
+        height: 400px;
+      }
+    }
+  }
+}

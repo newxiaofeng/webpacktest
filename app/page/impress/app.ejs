@@ -1,0 +1,164 @@
+<div class="no-support-message">
+    Your browser doesn't support impress.js. Try Chrome or Safari.
+</div>
+<div id="impress">
+    <div class="step slide" data-x="0" data-y="0" data-scale="4">
+        <div class="cover">
+            <h1>webpack</h1>
+            <h5>冯宏宇</h5>
+        </div>
+    </div>
+    <div class="step slide" data-x="0" data-y="2000" data-z="500">
+        <div class="catalog">
+            <h3>concept</h3>
+            <ul>
+                <li>task runners</li>
+                <li>builders</li>
+                <li>module bundler</li>
+            </ul>
+            <img src="<%= require('../../static/image/javascript.jpg') %>" alt=""/>
+        </div>
+    </div>
+    <div class="step slide" data-x="1500" data-y="2000" data-rotate="90">
+        <div class="task">
+            <h3>task runners</h3>
+            <p>grunt、gulp</p>
+            <img class="grunt" src="http://images.cnitblog.com/blog/62171/201312/16144528-ec3cfb357e5343f18a6d590b7c9b3c57.png" alt=""/>
+            <img class="gulp" src="<%=require('../../static/image/gulp.png')%>" alt=""/>
+            <p>一些简单demo</p>
+        </div>
+    </div>
+    <div class="step slide" data-x="3000" data-y="1000" data-rotate="45">
+        <h3>task runners</h3>
+        <table border="1" class="task-compare">
+            <tr>
+                <th>/</th>
+                <th>grunt</th>
+                <th>gulp</th>
+                <th>解释</th>
+            </tr>
+            <tr>
+                <td>task</td>
+                <td>√</td>
+                <td>√</td>
+                <td>两者都是任务式。需要声明每一步操作</td>
+            </tr>
+            <tr>
+                <td>实现</td>
+                <td>temporary</td>
+                <td>pipe</td>
+                <td>
+                    <p>grunt会生成中间文件，再对中间文件进行下一步的任务</p>
+                    <p>而gulp是管道式，声明好文件应使用的管道即可生成最终文件</p>
+
+                </td>
+            </tr>
+            <tr>
+                <td>效率</td>
+                <td>&darr;</td>
+                <td>&uarr;</td>
+                <td>
+                    <p>grunt以文件为单元，额外增加很多IO步骤</p>
+                </td>
+            </tr>
+            <tr>
+                <td>插件</td>
+                <td>&uarr;</td>
+                <td>&darr;</td>
+                <td>
+                    grunt插件较多。
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="step slide" data-x="3000" data-y="-1000" data-z="1000" data-scale="2" data-rotate-z="170">
+        <div class="builders">
+            <h3>builders</h3>
+            <p>fis、brunch</p>
+            <p>Convention Over Configuration (CoC)</p>
+            <div class="fis">
+                <span>fis:</span><img src="<%=require('../../static/image/fis.png')%>" alt=""/>
+            </div>
+            <div class="brunch">
+                <span>brunch:</span><img src="<%=require('../../static/image/brunch.png')%>" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="step slide" data-x="3000" data-y="-2000" data-z="1000" data-rotate-y="100" data-scale="0.4">
+        <div class="bundles">
+            <h3>module bundler</h3>
+            <p>webpack、browserify、requirejs+r.js、seajs</p>
+            <p>amd、commonjs、cmd</p>
+            <p>webpack支持amd、commonjs</p>
+            <img src="<%=require('../../static/image/cat.jpg')%>" alt=""/>
+        </div>
+    </div>
+    <div class="step slide" data-y="-2000" data-z="1000" data-rotate-y="100" data-scale="0.2">
+        <div class="standard">
+            <h3>不得不说的规范</h3>
+            <ul>
+                <li>amd</li>
+                <li>commonjs</li>
+                <li><del>cmd</del></li>
+            </ul>
+            <img src="<%= require('../../static/image/amd.png') %>" alt=""/>
+            <img src="<%= require('../../static/image/commonjs.png') %>" alt=""/>
+        </div>
+    </div>
+    <div class="step slide" data-x="3000">
+        <div class="webpack">
+            <h3>webpack</h3>
+            <h5>flexible module bundler</h5>
+            <ul>
+                <li>
+                    loaders&nbsp;&nbsp;=>&nbsp;&nbsp;方言编译
+                </li>
+                <li>
+                    plugins&nbsp;&nbsp;=>&nbsp;&nbsp;辅助功能
+                </li>
+                <li>
+                    组合grunt、gulp、bower、karma
+                </li>
+            </ul>
+            <h5>一些演示demo</h5>
+            <img src="<%= require('../../static/image/blocks.jpg') %>" alt=""/>
+        </div>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="0" data-scale="3">
+        <div class="config">
+            <h1>webpack configuration</h1>
+            <ol>
+                <li>context Default:process.cwd()</li>
+                <li>entry: single、multiple page</li>
+                <li>output: name、hash</li>
+                <li>module:loaders、preLoaders</li>
+                <li>resolve</li>
+                <li>plugins</li>
+            </ol>
+        </div>
+    </div>
+    <div class="step slide async-load" data-x="-4000" data-y="-2000" data-scale="2">
+        <h1>webpack</h1>
+        <button class="async">load_async</button>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-3500">
+        <div class="isomorphic">
+            <h1>webpack isomorphic javascript</h1>
+            <img src="<%=require('../../static/image/isomorphic.png')%>" alt=""/>
+            <img src="<%=require('../../static/image/isomorphic1.png')%>" alt=""/>
+        </div>
+    </div>
+    <div class="step slide" data-x="-4000" data-y="-3400" data-scale="0.1">
+        <h1>isomorphic javascript</h1>
+        <ul>
+            <li>React (UI components)</li>
+            <li>Director (routing)</li>
+            <li>Superagent (HTTP requests)</li>
+            <li>Meteor</li>
+        </ul>
+    </div>
+    <div class="step slide" data-x="-5000" data-y="-3000">
+        <h1>Thanks</h1>
+        <img src="<%= require('../../static/image/big_cat.jpg') %>" alt=""/>
+    </div>
+</div>
